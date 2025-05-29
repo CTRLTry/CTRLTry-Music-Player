@@ -28,5 +28,5 @@ wss.on('connection', (ws) => {
 app.use(express.static(path.join(__dirname, 'public')));
 
 server.listen(3000, () => {
-  console.log('Server listening on http://localhost:3000');
+  console.log('Server listening on port ${PORT}');
 });
